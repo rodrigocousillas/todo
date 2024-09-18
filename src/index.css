@@ -1,8 +1,36 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Pantallas muy grandes (desktops grandes) */
+@media (min-width: 1200px) {
+  body {
+    width: 50%; /* Ajusta el ancho para pantallas grandes */
+  }
+}
+
+/* Pantallas medianas (laptops o tablets en horizontal) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  body {
+    width: 75%; /* Ajusta el ancho para pantallas medianas */
+  }
+}
+
+/* Pantallas pequeñas (tablets o móviles en vertical) */
+@media (max-width: 767px) {
+  body {
+    width: 90%; /* Ancho mayor para pantallas pequeñas */
+  }
+}
+
+/* Pantallas muy pequeñas (móviles muy pequeños) */
+@media (max-width: 480px) {
+  body {
+    width: 95%; /* Casi pantalla completa para móviles pequeños */
+  }
 }
 
 code {
